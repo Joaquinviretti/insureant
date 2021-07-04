@@ -1,0 +1,94 @@
+#community {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    color: $primary-color-dark;
+    .grid {
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30vh 35vh;
+        grid-template-areas: "title img" "info img";     
+        column-gap: 20px;    
+
+        .grid__div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .grid__div--title {
+            grid-area: title;
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 800;
+                max-width: 400px;
+                line-height: 3.5rem;
+            }
+        }
+        
+        .grid__div--info {
+            grid-area: info;
+            .icons {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin:0 3rem;
+            }
+            img {
+                width: 50px;
+            }
+            .car {
+                margin-right: 70px;
+            }
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 600;
+                max-width: 70%;
+                line-height: 3.5rem;
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                max-width: 400px;
+            }
+        }
+        
+        .grid__div--image {
+            grid-area: img;
+            .patient {
+                width: 400px;
+                margin-left: 30px;
+            }
+            h4 {
+                background-color: lightgreen;
+                color: green;
+                padding: 10px;
+                max-width: 140px;
+                border-radius: 20px;
+                margin-bottom: 30px;
+            }
+            .heart__container {
+                display: flex;
+                margin-bottom: 30px;
+                p {
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    margin-left: 30px;
+                }
+                .heart {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        
+    }
+    
+    
+}

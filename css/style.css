@@ -1,0 +1,334 @@
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+/* variables */
+/* mixins */
+/* extends */
+/* navbar */
+nav {
+  width: 100%;
+  height: 90px;
+  padding: 0 3%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+nav a {
+  text-decoration: none;
+}
+nav a p {
+  font-weight: bold;
+  font-size: 2em;
+  color: #010E2E;
+}
+nav a p span {
+  color: #316AFF;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+nav ul li {
+  margin-left: 3em;
+}
+nav ul a {
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #010E2E;
+}
+nav ul .nav__link--contact {
+  color: white;
+  background-color: #316AFF;
+  padding: 12px 20px;
+}
+
+/* cover */
+main {
+  padding-top: 90px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+main .main__left {
+  width: 50%;
+  background-image: url("../img/cover__woman.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .main__right {
+  background-color: #f1f1f1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2% 0 5%;
+}
+main .main__right .right__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+main .main__right .right__content h1 {
+  color: #010E2E;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  max-width: 450px;
+}
+main .main__right .right__content p {
+  color: #474747;
+  font-size: 1.3em;
+  padding: 1em 0;
+  line-height: 1.5em;
+  max-width: 500px;
+}
+main .main__right .right__content .right__button {
+  padding-top: 1em;
+}
+main .main__right .right__content .right__button button {
+  font-weight: 700;
+  color: #010E2E;
+  padding: 20px 27px;
+  font-size: 1.2em;
+}
+main .main__right .right__content .right__button .right__button--dark {
+  background-color: #316AFF;
+  color: white;
+  margin-right: 10px;
+}
+
+.brands {
+  width: 85%;
+  height: 140px;
+  background-color: #f7f7f7;
+  position: absolute;
+  bottom: -9%;
+  right: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.brands ul li img {
+  width: 150px;
+}
+
+#community {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  color: #010E2E;
+}
+#community .grid {
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30vh 35vh;
+  grid-template-areas: "title img" "info img";
+  column-gap: 20px;
+}
+#community .grid .grid__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#community .grid .grid__div--title {
+  grid-area: title;
+}
+#community .grid .grid__div--title h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  max-width: 400px;
+  line-height: 3.5rem;
+}
+#community .grid .grid__div--info {
+  grid-area: info;
+}
+#community .grid .grid__div--info .icons {
+  display: flex;
+  align-items: center;
+}
+#community .grid .grid__div--info span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 3rem;
+}
+#community .grid .grid__div--info img {
+  width: 50px;
+}
+#community .grid .grid__div--info .car {
+  margin-right: 70px;
+}
+#community .grid .grid__div--info h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  max-width: 70%;
+  line-height: 3.5rem;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#community .grid .grid__div--info p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 400px;
+}
+#community .grid .grid__div--image {
+  grid-area: img;
+}
+#community .grid .grid__div--image .patient {
+  width: 400px;
+  margin-left: 30px;
+}
+#community .grid .grid__div--image h4 {
+  background-color: lightgreen;
+  color: green;
+  padding: 10px;
+  max-width: 140px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+#community .grid .grid__div--image .heart__container {
+  display: flex;
+  margin-bottom: 30px;
+}
+#community .grid .grid__div--image .heart__container p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-left: 30px;
+}
+#community .grid .grid__div--image .heart__container .heart {
+  width: 50px;
+  height: 50px;
+}
+
+#plans {
+  height: 80vh;
+  padding-top: 10vh;
+  color: #010E2E;
+}
+#plans .plans__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#plans .plans__header h2 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 50px;
+}
+#plans .plans__header p {
+  color: #363636;
+  font-size: 1.3em;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6em;
+}
+#plans .plans__buttons {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  margin-top: 2em;
+  font-size: 1.3rem;
+}
+#plans .plans__buttons .anual {
+  margin-right: 40px;
+  color: white;
+  background-color: #316AFF;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+#plans .plans__buttons .month {
+  font-weight: 700;
+}
+#plans .plans__cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+#plans .plans__cards .planCard {
+  height: 50vh;
+  width: 30%;
+  max-width: 300px;
+}
+#plans .plans__cards .planCard .card__cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 30px 0;
+}
+#plans .plans__cards .planCard .card__cover h2 {
+  font-size: 2em;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+#plans .plans__cards .planCard .card__cover .description {
+  text-align: center;
+  line-height: 1.5em;
+  padding-bottom: 40px;
+}
+#plans .plans__cards .planCard .card__cover .price__div {
+  display: flex;
+  align-items: baseline;
+}
+#plans .plans__cards .planCard .card__cover .price {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+#plans .plans__cards .planCard .card__cover span {
+  font-size: 1.5rem;
+}
+#plans .plans__cards .planCard .card__cover button {
+  margin-top: 40px;
+  padding: 15px 60px;
+  background-color: #c4dfff;
+  font-weight: 600;
+  color: #3539ff;
+}
+#plans .plans__cards .planCard .card__info {
+  line-height: 2.5rem;
+  padding: 20px;
+  font-size: 1rem;
+}
+#plans .plans__cards .planCard .card__info ul {
+  list-style-type: none;
+}
+#plans .plans__cards .planCard .card__info li {
+  background: url("../img/diaomonf.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 40px;
+}
+#plans .plans__cards .planCard .card__info--selected li {
+  background: url("../img/diamond-dark.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 40px;
+}
+#plans .plans__cards .planCard .card__cover--selected {
+  background-color: #316AFF;
+  color: white;
+}
+#plans .plans__cards .planCard .card__cover--selected button {
+  background-color: #F8E939;
+  color: #010E2E;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */
