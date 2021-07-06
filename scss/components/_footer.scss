@@ -1,0 +1,33 @@
+footer {
+    padding: 2.5% 0;
+    background-color: $primary-color-dark;
+    height: 40vh;
+    color: rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .footer__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+
+    }
+
+    i {
+        margin-right: 20px;
+    }
+
+}
